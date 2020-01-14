@@ -11,7 +11,7 @@ import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
 public class SpringFirstExamScopeApplication {
-	private static Logger logger = (Logger) LoggerFactory.getLogger(SpringFirstExamScopeApplication.class);
+	private static Logger logger = LoggerFactory.getLogger(SpringFirstExamScopeApplication.class);
 	public static void main(String[] args) {
 
 		ApplicationContext applicationContext = SpringApplication.run(SpringFirstExamScopeApplication.class, args);
