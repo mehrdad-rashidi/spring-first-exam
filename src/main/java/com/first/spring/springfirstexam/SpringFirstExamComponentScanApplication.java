@@ -1,8 +1,6 @@
 package com.first.spring.springfirstexam;
 
-import com.first.spring.componentscan.ComponentDAO;
-import com.first.spring.springfirstexam.basic.BinarySearchImpl;
-import com.first.spring.componentscan.ComponentDAO;
+import com.first.spring.componentScan.ComponentDAO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -12,9 +10,9 @@ import org.springframework.context.annotation.ComponentScan;
 
 
 @SpringBootApplication
-@ComponentScan("com.first.spring.componentscan")
+@ComponentScan("com.first.spring.componentScan")
 public class SpringFirstExamComponentScanApplication {
-	private static Logger logger = LoggerFactory.getLogger(SpringFirstExamScopeApplication.class);
+	private static Logger logger = LoggerFactory.getLogger(SpringFirstExamComponentScanApplication.class);
 	public static void main(String[] args) {
 
 		ApplicationContext applicationContext = SpringApplication.run(SpringFirstExamComponentScanApplication.class, args);
