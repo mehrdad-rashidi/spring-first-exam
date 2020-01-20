@@ -11,7 +11,6 @@ import org.springframework.context.annotation.ComponentScan;
 
 
 @SpringBootApplication
-@ComponentScan("com.first.spring.springfirstexam")
 public class SpringFirstExamScopeApplication {
 	private static Logger logger = LoggerFactory.getLogger(SpringFirstExamScopeApplication.class);
 	public static void main(String[] args) {

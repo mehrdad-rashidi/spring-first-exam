@@ -1,13 +1,11 @@
-package com.first.spring.componentscan;
+package com.first.spring.componentScan;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@ComponentScan("com.first.spring.componentscan")
+@ComponentScan("com.first.spring.componentScan")
 //@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class ComponentDAO {
     @Autowired
