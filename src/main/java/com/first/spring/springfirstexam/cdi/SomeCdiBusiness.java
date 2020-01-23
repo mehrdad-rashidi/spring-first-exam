@@ -12,10 +12,23 @@ public class SomeCdiBusiness {
     SomeCdiDao someCdiDao;
 
     public SomeCdiDao getSomeCdiDao() {
+
         return someCdiDao;
     }
 
     public void setSomeCdiDao(SomeCdiDao someCdiDao) {
+
         this.someCdiDao = someCdiDao;
+    }
+
+    public int findGreatest(){
+        int geatest = Integer.MIN_VALUE;
+        int[] data =  someCdiDao.getData();
+        for (int value : data) {
+            if (    value > geatest){
+                geatest = value;
+            }
+        }
+        return geatest;
     }
 }
